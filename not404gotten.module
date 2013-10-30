@@ -1,0 +1,51 @@
+<?php
+/**
+ * @file
+ * The Childfocus Notfound module file shows a missing
+ * child on your 404 pages.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function not404gotten_menu() {
+  $items = array();
+
+  $items['not404gotten'] = array(
+    'title' => 'Page not found',
+    'page callback' => 'not404gotten_page',
+    'access callback' => 'not404gotten_access',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_access().
+ */
+function not404gotten_access() {
+  return TRUE;
+}
+
+/**
+ * Page callback for compassion_notfound menu item.
+ */
+function not404gotten_page() {
+  global $language;
+  return theme('not404gotten_iframe', array(
+    'url' => 'http://404gotten.org/foundframe/?r=drupal'));
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function not404gotten_theme($existing, $type, $theme, $path) {
+  return array(
+    'not404gotten_iframe' => array(
+      'variables' => array(
+        'url' => '',
+      ),
+      'template' => 'templates/not404gotten',
+    ),
+  );
+}

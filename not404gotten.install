@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the Childfocus Notfound module.
+ */
+
+/**
+ * Change Drupals 404 page to our custom page.
+ */
+function not404gotten_install() {
+  variable_set('site_not404gotten_backup', variable_get('site_404'));
+  variable_set('site_404', 'not404gotten');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function not404gotten_uninstall() {
+  if (variable_get('site_404', '') == 'not404gotten') {
+    varialbe_set('site_404', variable_get('site_not404gotten'));
+    variable_del('site_not404gotten_backup');
+  }
+}
