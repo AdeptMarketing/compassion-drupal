@@ -30,7 +30,6 @@ function not404gotten_access() {
  * Page callback for compassion_notfound menu item.
  */
 function not404gotten_page() {
-  global $language;
   return theme('not404gotten_iframe', array(
     'url' => 'http://404gotten.org/foundframe/?r=drupal'));
 }

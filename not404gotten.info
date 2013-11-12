@@ -1,6 +1,5 @@
 name = Not 404 Gotten
-description = 'The 404gotten.org NotFound extension will replace your 404 pages with 
-the photo of impoverished children around the world in need of sponsorship.   For more info, 
+description = 'The 404gotten.org NotFound extension will replace your 404 pages with
+the photo of impoverished children around the world in need of sponsorship.   For more info,
 visit <a href="http://404gotten.org">404gotten.org</a>'
 core = 7.x
-version = 0.9
