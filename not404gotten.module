@@ -31,7 +31,7 @@ function not404gotten_access() {
  */
 function not404gotten_page() {
   return theme('not404gotten_iframe', array(
-    'url' => 'http://404gotten.org/foundframe/?referer=133841'));
+    'url' => 'https://404gotten.org/foundframe/?referer=133841'));
 }
 
 

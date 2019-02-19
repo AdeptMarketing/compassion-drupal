@@ -12,9 +12,9 @@ it's one of the most common error pages you see.
 
 Note: Activating this module will automatically replace your default
 Drupal 404 page. To stop it, simply deactivate. All of the unsponsored
-children are served within an iframe pointing to http://404gotten.org
+children are served within an iframe pointing to https://404gotten.org
 
-http://404gotten.org is provided by Compassion International.  Compassion
+https://404gotten.org is provided by Compassion International.  Compassion
 is a leading non-profit that receives high rankings from leading watch
 dog organizations like the Better Business Bureau, Charity Navigator and
 others.
